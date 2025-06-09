@@ -1,0 +1,51 @@
+/* Project Card Styles */
+.project {
+  background: linear-gradient(90deg, #232946 0%, #181c2f 100%);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.project h3 {
+  color: #ff6600;
+  margin-bottom: 0.6rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.project p {
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+.tech-list {
+  margin: 0.7rem 0 0.5rem 0;
+}
+.tech {
+  display: inline-block;
+  background: #ffd70022;
+  color: #ffd700;
+  font-size: 0.95rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.github-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.project-img {
+  display: block;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}

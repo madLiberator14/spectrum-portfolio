@@ -1,4 +1,46 @@
 <section class="contact">
   <h2>Contact Me</h2>
-  <p>You can reach me at <a href="mailto:your.email&#64;example.com">your.email&#64;example.com</a></p>
+  <p>
+    You can reach me at
+    <a href="mailto:kagokebonye&#64;gmail.com">kagokebonye&#64;gmail.com</a>
+  </p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+    <div>
+      <label for="fullName">Full Name</label>
+      <input id="fullName" formControlName="fullName" type="text" />
+      <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="error">
+        <div *ngIf="fullName?.errors?.['required']">Full Name is required.</div>
+        <div *ngIf="fullName?.errors?.['minlength']">Full Name must be at least 2 characters.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" />
+      <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="error">
+        <div *ngIf="email?.errors?.['required']">Email is required.</div>
+        <div *ngIf="email?.errors?.['email']">Please enter a valid email address.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="subject">Subject</label>
+      <input id="subject" formControlName="subject" type="text" />
+      <div *ngIf="subject?.invalid && (subject?.dirty || subject?.touched)" class="error">
+        <div *ngIf="subject?.errors?.['required']">Subject is required.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" formControlName="message" rows="5"></textarea>
+      <div *ngIf="message?.invalid && (message?.dirty || message?.touched)" class="error">
+        <div *ngIf="message?.errors?.['required']">Message is required.</div>
+        <div *ngIf="message?.errors?.['minlength']">Message must be at least 10 characters.</div>
+      </div>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
 </section>

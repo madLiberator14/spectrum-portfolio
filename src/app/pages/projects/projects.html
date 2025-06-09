@@ -1,11 +1,4 @@
 <section class="projects">
   <h2>Projects</h2>
-  <div class="project">
-    <h3>Project One</h3>
-    <p>A sample project using Angular and Firebase.</p>
-  </div>
-  <div class="project">
-    <h3>Project Two</h3>
-    <p>Another cool thing I built using TypeScript and Bootstrap.</p>
-  </div>
+  <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
 </section>
