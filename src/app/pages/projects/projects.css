@@ -18,20 +18,12 @@
 }
 
 .project {
-  background: linear-gradient(90deg, #232946 0%, #181c2f 100%);
-  padding: 1.5rem 1.2rem;
-  margin-bottom: 1.5rem;
-  border-left: 5px solid #ff6600;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
-  transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
-}
-
-.project:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 6px 24px rgba(255, 214, 0, 0.13);
-  border-left: 5px solid #ffd700;
+  background: linear-gradient(135deg, #181f3a 80%, #232b4a 100%);
+  border-radius: 18px;
+  margin: 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
+  border-left: 6px solid orange;
 }
 
 .project h3 {
@@ -45,5 +37,5 @@
 .project p {
   color: #e0e0e0;
   font-size: 1.08rem;
-  line-height: 1.6;
+  line-height: 1.6
 }

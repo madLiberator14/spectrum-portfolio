@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/spectrum-portfolio",
+    "public": "dist/spectrum-portfolio/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
